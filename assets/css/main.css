@@ -1,7 +1,245 @@
-#landing{
-    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("assets/img/nathair.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    padding-left: 420px;
+@import url("https://fonts.googleapis.com/css?family=Anton|Gugi|Lato|Roboto|Sofia&display=swap");
+/* :root{
+    --light-gray: #2b3032a1;
+    --primary-color: #45ccb8;
+    --border: #2b303218;
+    --texr-color: #ff686b;
+    --roboto: "Roboto", sans-serif;
+    --gugi: "Gugi", cursive;
+    --sofia: "Sofia", cursive;
+} */
+
+:root{
+    --light-gray: #AA8B7C;
+    --primary-color: #ff686b;
+    --border: #2b303218;
+    --anchor-color: #6C757D;
+    --text-color: #0CA9AA;
+    --roboto: "Roboto", sans-serif;
+    --gugi: "Gugi", cursive;
+    --sofia: "Sofia", cursive;
+}
+.primary-color{
+    color: var(--primary-color);
+}
+.bg-primary-color{
+    background-color: var(--primary-color)!important;
+}
+.text-color{
+    color: var(--text-color);
+}
+.font-roboto{
+    font-family: var(--roboto);
+}
+.lightblue{
+    color: lightblue;
+}
+.anchor-color{
+    color: var(--anchor-color);
+}
+.light-gray{
+    color: var(--light-gray);
+}
+header{
+    background-color: var(--primary-color);
+    font-family: var(--sofia);
+}
+/* header .site-title{
+    font-family: var(--gugi);
+} */
+.container .dropdown-toggle,
+.container .dropdown-item{
+    font-size: 0.7em;
+}
+.header-linksa{
+    font-size: 0.9em;
+    text-decoration: none;
+}
+.navbar-nav{
+    padding: 0.8em 0em;
+}
+.navbar-nav .nav-link{
+    font-size: 0.9em;
+    color: var(--light-gray)!important;
+}
+.navbar-nav .nav-item .nav-link{
+    padding: 0 1.3em;
+}
+.navbar-nav .basket-icon{
+    margin-right: 6.5rem !important;
+}
+.navbar{
+    text-decoration: none;
+}
+.container-fluid{
+    padding: 0em;
+    padding-right: 0em;
+}
+.d-flex{
+    display: flex;
+    padding-left: -50px;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.text-center{
+    text-align: center;
+}
+a.services{
+    text-decoration: none;
+    color: #ffc107;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#services h1{ 
+    text-align: center;
+    padding-top: 120px;
+}
+#services hr{
+    width: 4%;
+    background-color: #ffc107;
+    padding: 1px;
+    border-radius: 20px 20px 20px 20px;
+    border-color: #ffc107;
+}
+#services h3{
+    font-size: 25px;
+    color: #808080;
+}
+#services p{ 
+    font-size: 19px;
+    color: #808080;
+}
+#services .d-flex div{
+    padding: 20px;
+    margin: 5px;
+}
+#services .d-flex div i{
+    color: #ffc107;
+
+}
+#services .d-flex div:first-child{
+    background-color: white;
+    -webkit-box-shadow: 0 8px 6px -6px white;
+    -moz-box-shadow: 0 8px 6px -6px white;
+    box-shadow: 0 8px 6px -6px white;
+    color: #000;
+}
+#services .d-flex div:first-child:hover{
+    background: linear-gradient(to right, palegreen, orange, yellow);
+    transition: 1s all;
+    color: #000;
+}
+#services .d-flex div i:hover{
+    color: #000;
+    transition: 1s all;
+}
+#services .d-flex div h3:hover{
+    color: #000;
+    transition: 1s all;
+}
+#services .d-flex div p:hover{
+    color: #000;
+    transition: 1s all;
+}
+#services .d-flex div:nth-child(2){
+    background-color: #fff;
+    color: #000;
+    -webkit-box-shadow: 0 8px 6px -6px #fff;
+    -moz-box-shadow: 0 8px 6px -6px #fff;
+    box-shadow: 0 8px 6px -6px #fff;
+}
+#services .d-flex div:nth-child(2):hover{
+    background: linear-gradient(to right, palegreen, orange, yellow);
+    transition: 1s all;
+    color: #fff;
+}
+#services .d-flex div:nth-child(3){
+    background-color: #fff;
+    color: #000;
+    -webkit-box-shadow: 0 8px 6px -6px #fff;
+    -moz-box-shadow: 0 8px 6px -6px #fff;
+    box-shadow: 0 8px 6px -6px #fff;
+}
+#services .d-flex div:nth-child(3):hover{
+    background: linear-gradient(to right, palegreen, orange, yellow);
+    transition: 1s all;
+    color: #fff;
+}
+#services .d-flex div:last-child{
+    background-color: white;
+    color: #000;
+    -webkit-box-shadow: 0 8px 6px -6px #fff;
+    -moz-box-shadow: 0 8px 6px -6px #fff;
+    box-shadow: 0 8px 6px -6px #fff;
+}
+#services .d-flex div:last-child:hover{
+    background: linear-gradient(to right, palegreen, orange, yellow);
+    transition: 1s all;
+    color: #000;
+}
+/* #directory {
+    size: px;
+} */
+#directory .d-flex div img3{
+    padding: 10px;
+    margin: 5px;
+}
+img{
+    width: 50;
+    height: 5;
+}
+a.pix3{
+    text-decoration: none;
+    color: #808080;
+    font-weight: 900;
+}
+a.pix4{
+    text-decoration: none;
+    color: #808080;
+    font-weight: 900;
+}
+#contact{
+    text-align: center;
+    padding-top: 140px;
+}
+#contact hr{
+    width: 4%;
+    background-color: #ffc107;
+    padding: 1px;
+    border-radius: 20px 20px 20px 20px;
+    border-color: #ffc107;
+}
+a.contact{
+    text-decoration: none;
+    color: #808080;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#contact h2{ 
+    text-align: center;
+    padding-top: 40px;
+}
+#contact p{ 
+    font-size: 19px;
+    color: #808080;
+}
+#contact .d-flex div{
+    padding: 20px;
+    margin: 5px;
+}
+#contact .d-flex div i{
+    padding: 20px;
+    margin: 5px;
+    padding-bottom: 0px;
+    color: #808080;
+}
+a.mail{
+    text-decoration: none;
+    color: #ffc107;
+}
+footer{
+    background-color: #808080;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    /* padding-top: 80px; */
 }
