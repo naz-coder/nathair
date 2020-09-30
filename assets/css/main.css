@@ -322,14 +322,6 @@ a.mail{
     text-decoration: none;
     color: var(--primary-color);
 }
-footer{
-    background-color: var(--primary-color);
-    color: #000000;
-    text-align: center;
-    padding: 20px;
-    /* padding-top: 80px; */
-}
-footer.small{
-    color: #000000;
-    font-family: var(--sofia);
+footer a.tw-ic{
+    text-decoration: none;
 }
