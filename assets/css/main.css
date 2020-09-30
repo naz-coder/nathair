@@ -40,6 +40,9 @@
 .light-gray{
     color: var(--light-gray);
 }
+body{
+    font-family: var(--sofia);
+}
 header{
     background-color: var(--primary-color);
     font-family: var(--sofia);
