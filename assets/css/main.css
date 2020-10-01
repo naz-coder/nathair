@@ -94,7 +94,7 @@ height: 700px;
 .carousel-caption{
     padding-bottom: 300px; 
 }
-.carousel-caption button{
+.carousel .btn{
     padding: 15px;
     background-color: var(--anchor-color);
     border: 0px;
@@ -104,14 +104,11 @@ height: 700px;
     border-radius: 30px 30px 30px 30px;
     transition: 1s all;
     font-family: var(--sofia);
+    color: antiquewhite;
 }
 .carousel-caption button:hover{
     color: antiquewhite;
     transition: 1s all;
-}
-a.aboutbtn{
-    text-decoration: none;
-    color: antiquewhite;
 }
 .carousel-caption h2{
     font-family: var(--sofia);
@@ -141,25 +138,25 @@ a.style{
 a.feedback{
     text-decoration: none;
 }
-section#about{
+#about{
     font-family: var(--sofia);
     background-color: var(--border);
     padding-top: 110px;
     text-align: center;
     padding-bottom: 70px;
 }
-section#about h4{
+#about h4{
     font-family: var(--sofia);
     text-align: center;
     font-weight: 700;
 
 }
-section#about h5{
+#about h5{
     font-family: var(--sofia);
     text-align: center;
     font-weight: 400;
 }
-section#about button{
+#about .btn{
     font-family: var(--sofia);
     padding: 15px;
     background-color: var(--anchor-color);
@@ -175,7 +172,7 @@ a.services{
     text-decoration: none;
     color: white;
 }
-section#services{
+#services{
     font-family: var(--sofia);
     background-color: var(--border);
     padding-top: 110px;
@@ -273,58 +270,212 @@ section#services{
     transition: 1s all;
     color: var(--primary-color);
 }
-#slides .d-flex div{
+/* .container .d-flex div{
     padding: 20px;
     margin: 10px;
     margin-left: 5px;
     margin-right: 5px;
+} */
+
+.img-fluid{
+    height: 220px;
+    width: 240px;
+    padding-bottom: 400px;
 }
-img{
-    width: 50;
-    height: 5;
-}
-#contact{
-    text-align: center;
-    padding-top: 140px;
-    font-family: var(--sofia);
-}
-#contact hr{
-    width: 4%;
-    background-color: var(--primary-color);
-    padding: 1px;
-    border-radius: 20px 20px 20px 20px;
-    border-color: var(--primary-color);
-} 
-a.contact{
-    text-decoration: none;
-    color: var(--anchor-color);
-}
-section#contact h2{ 
-    text-align: center;
-    padding-top: 40px;
-    font-weight: 800;
-}
-section#contact p{ 
-    font-size: 19px;
-    color: #000000;
-}
-section#contact.d-flex{
-    text-align: center;
-}
-section#contact.d-flex div{
-    padding: 15px;
-    margin: 5px;
-}
-section#contact .d-flex div i{
-    padding: 10px;
-    margin: 5px;
-    padding-bottom: 0px;
-    color: var(--anchor-color);
-}
-a.mail{
-    text-decoration: none;
-    color: var(--primary-color);
-}
-footer a.tw-ic{
-    text-decoration: none;
+@media only screen and (max-width: 768px){
+    .container .dropdown-toggle,
+    .container .dropdown-item{
+        font-size: 0.5em;
+    }
+    .site-title{
+        font-size: 1.2em;
+    }
+    .header-links{
+        font-size: 0.7em;
+    }
+    .navbar-nav{
+        padding: 0.4em;
+    }
+    .navbar-collapse{
+        font-size: 1.0em;
+    }
+    .navbar-brand{
+        font-size: 0.8em;
+    }
+    .navbar{
+        font-size: 0.8em;
+    }
+    .d-block{
+    height: 350px;
+    }
+    .carousel-caption{
+        padding-bottom: 90px; 
+    }
+    .carousel .btn{
+        padding: 10px;
+        background-color: var(--anchor-color);
+        border: 0px;
+        cursor: pointer;
+        font-size: 10px;
+        font-weight: 900;
+        border-radius: 30px 30px 30px 30px;
+        transition: 1s all;
+        font-family: var(--sofia);
+        color: rgb(182, 212, 182);
+    }
+    .carousel-caption button:hover{
+        color: antiquewhite;
+        transition: 1s all;
+    }
+    .carousel-caption h2{
+        font-family: var(--sofia);
+        color: rgb(182, 212, 182);
+        font-weight: 900;
+        font-size: 1.1em;
+    }
+    .carousel-caption p{
+        font-family: var(--sofia);
+        color: #000000;
+    }
+    #about{
+        font-family: var(--sofia);
+        background-color: var(--border);
+        padding-top: 110px;
+        text-align: center;
+        padding-bottom: 70px;
+    }
+    #about h4{
+        font-family: var(--sofia);
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.1em;
+    
+    }
+    #about h5{
+        font-family: var(--sofia);
+        text-align: center;
+        font-weight: 400;
+        font-size: 0.8em;
+    }
+    #about .btn{
+        font-family: var(--sofia);
+        padding: 10px;
+        background-color: var(--anchor-color);
+        border: 0px;
+        cursor: pointer;
+        font-size: 10px;
+        font-weight: 900;
+        border-radius: 30px 30px 30px 30px;
+        transition: 1s all;
+    }
+    a.services{
+        font-family: var(--sofia);
+        text-decoration: none;
+        color: white;
+    }
+    #services{
+        font-family: var(--sofia);
+        background-color: var(--border);
+        padding-top: 5px;
+        text-align: center;
+        padding-bottom: 80px;
+    }
+    #services h1{ 
+        text-align: center;
+        padding-top: 100px;
+        font-weight: 600;
+        font-size: 1.8em;
+    }
+    #services h3{
+        font-size: 1.0em;
+        color: var(--primary-color);
+    }
+    #services p{ 
+        font-size: 0.8em;
+        color: var(--primary-color);
+    }
+    #services.row{
+        flex-direction: column;
+    }
+    #services .d-flex div i{
+        color: var(--anchor-color);
+    }
+    .row{
+        flex-direction: column;
+    }
+    #services .d-flex div:first-child{
+        background-color: white;
+        -webkit-box-shadow: 0 8px 6px -6px white;
+        -moz-box-shadow: 0 8px 6px -6px white;
+        box-shadow: 0 8px 6px -6px white;
+        color: var(--primary-color);
+    }
+    #services .d-flex div:first-child:hover{
+        background-color: #000000;
+        transition: 1s all;
+        color: var(--primary-color);
+    }
+    #services .d-flex div i:hover{
+        color: #ffffff;
+        transition: 1s all;
+    }
+    #services .d-flex div h3:hover{
+        color: #ffffff;
+        transition: 1s all;
+    }
+    #services .d-flex div p:hover{
+        color: #ffffff;
+        transition: 1s all;
+    }
+    #services .d-flex div:nth-child(2){
+        background-color: #fff;
+        color: var(--primary-color);
+        -webkit-box-shadow: 0 8px 6px -6px #fff;
+        -moz-box-shadow: 0 8px 6px -6px #fff;
+        box-shadow: 0 8px 6px -6px #fff;
+    }
+    #services .d-flex div:nth-child(2):hover{
+        /* background: linear-gradient(to right, palegreen, orange, yellow); */
+        background-color: #000000;
+        transition: 1s all;
+        color: #fff;
+    }
+    #services .d-flex div:nth-child(3){
+        background-color: #fff;
+        color: var(--primary-color);
+        -webkit-box-shadow: 0 8px 6px -6px #fff;
+        -moz-box-shadow: 0 8px 6px -6px #fff;
+        box-shadow: 0 8px 6px -6px #fff;
+    }
+    #services .d-flex div:nth-child(3):hover{
+        /* background: linear-gradient(to right, palegreen, orange, yellow); */
+        background-color: #000000;
+        transition: 1s all;
+        color: var(--primary-color);
+    }
+    #services .d-flex div:last-child{
+        background-color: white;
+        color: var(--primary-color);
+        -webkit-box-shadow: 0 8px 6px -6px #fff;
+        -moz-box-shadow: 0 8px 6px -6px #fff;
+        box-shadow: 0 8px 6px -6px #fff;
+    }
+    #services .d-flex div:last-child:hover{
+        /* background: linear-gradient(to right, palegreen, orange, yellow); */
+        background-color: #000000;
+        transition: 1s all;
+        color: var(--primary-color);
+    }
+    /* .container .d-flex div{
+        padding: 20px;
+        margin: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    } */
+    
+    .img-fluid{
+        height: 220px;
+        width: 240px;
+        padding-bottom: 400px;
+    }            
 }
